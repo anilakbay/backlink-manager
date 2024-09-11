@@ -1,0 +1,142 @@
+/* Genel Ayarlar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #673aaa;
+  font-family: Arial, sans-serif;
+}
+
+/* Başlık Stili */
+h1 {
+  background: #000;
+  color: #fff;
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Modal Konteyneri */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.show-modal {
+  display: flex;
+}
+
+/* Modal Stili */
+.modal {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  max-width: 90%;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background: #673aaa;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Form Stili */
+.modal-content {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  color: #673aaa;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #673aaa;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background: #673aaa;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* Backlink Konteyneri */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  width: calc(33.333% - 20px);
+}
+
+/* Link Stili */
+a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fa-times {
+  cursor: pointer;
+}
